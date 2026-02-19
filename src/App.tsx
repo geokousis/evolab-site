@@ -343,6 +343,7 @@ function App() {
   const [selectedProject, setSelectedProject] = useState<DisplayProject | null>(null);
   const [projectFilter, setProjectFilter] = useState<'active' | 'past'>('past');
   const [activeStep, setActiveStep] = useState<StepId>('our-goal');
+  const [revealedSteps, setRevealedSteps] = useState<Set<StepId>>(() => new Set(['our-goal']));
 
   useEffect(() => {
     fetchData();
@@ -372,6 +373,12 @@ function App() {
 
         if (bestRatio > 0) {
           setActiveStep(bestId);
+          setRevealedSteps((prev) => {
+            if (prev.has(bestId)) return prev;
+            const next = new Set(prev);
+            next.add(bestId);
+            return next;
+          });
         }
       },
       {
@@ -666,7 +673,7 @@ function App() {
         <section
           id="our-goal"
           data-tree-section
-          className={`tree-section section-dark ${activeStep === 'our-goal' ? 'is-active' : ''}`}
+          className={`tree-section section-dark ${activeStep === 'our-goal' ? 'is-active' : ''} ${revealedSteps.has('our-goal') ? 'is-revealed' : ''}`}
         >
           <div className="section-page goal-page">
             <div className="goal-lab-hero">
@@ -760,7 +767,7 @@ function App() {
         <section
           id="members"
           data-tree-section
-          className={`tree-section section-light ${activeStep === 'members' ? 'is-active' : ''}`}
+          className={`tree-section section-light ${activeStep === 'members' ? 'is-active' : ''} ${revealedSteps.has('members') ? 'is-revealed' : ''}`}
         >
           <div className="section-page">
             <h2>Members</h2>
@@ -807,7 +814,7 @@ function App() {
         <section
           id="projects"
           data-tree-section
-          className={`tree-section section-dark ${activeStep === 'projects' ? 'is-active' : ''}`}
+          className={`tree-section section-dark ${activeStep === 'projects' ? 'is-active' : ''} ${revealedSteps.has('projects') ? 'is-revealed' : ''}`}
         >
           <div className="section-page">
             <h2>Projects</h2>
@@ -859,7 +866,7 @@ function App() {
         <section
           id="papers"
           data-tree-section
-          className={`tree-section section-light ${activeStep === 'papers' ? 'is-active' : ''}`}
+          className={`tree-section section-light ${activeStep === 'papers' ? 'is-active' : ''} ${revealedSteps.has('papers') ? 'is-revealed' : ''}`}
         >
           <div className="section-page">
             <h2>Papers</h2>
@@ -911,7 +918,7 @@ function App() {
         <section
           id="teaching"
           data-tree-section
-          className={`tree-section section-dark ${activeStep === 'teaching' ? 'is-active' : ''}`}
+          className={`tree-section section-dark ${activeStep === 'teaching' ? 'is-active' : ''} ${revealedSteps.has('teaching') ? 'is-revealed' : ''}`}
         >
           <div className="section-page">
             <h2>Teaching</h2>
@@ -939,7 +946,7 @@ function App() {
         <section
           id="contact"
           data-tree-section
-          className={`tree-section section-dark ${activeStep === 'contact' ? 'is-active' : ''}`}
+          className={`tree-section section-dark ${activeStep === 'contact' ? 'is-active' : ''} ${revealedSteps.has('contact') ? 'is-revealed' : ''}`}
         >
           <div className="section-page">
             <h2>Contact</h2>
