@@ -34,8 +34,10 @@ jobs:
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
           if [[ "$REPO_NAME" == *.github.io ]]; then
             echo "value=/" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://$REPO_NAME/" >> "$GITHUB_OUTPUT"
           else
             echo "value=/$REPO_NAME/" >> "$GITHUB_OUTPUT"
+            echo "site_url=https://${GITHUB_REPOSITORY_OWNER}.github.io/$REPO_NAME/" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Install dependencies
@@ -44,6 +46,7 @@ jobs:
       - name: Build
         env:
           VITE_BASE_PATH: ${{ steps.base.outputs.value }}
+          VITE_SITE_URL: ${{ steps.base.outputs.site_url }}
         run: npm run build
 
       - name: Setup Pages
