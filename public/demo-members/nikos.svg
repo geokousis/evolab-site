@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Nikos Arvanitis">
+  <rect width="320" height="320" fill="#141414"/>
+  <circle cx="160" cy="114" r="52" fill="#bbbbbb"/>
+  <path d="M58 298c14-58 46-96 102-96s88 38 102 96" fill="#8f8f8f"/>
+  <text x="24" y="44" fill="#ececec" font-family="Sora, Manrope, sans-serif" font-size="24" letter-spacing="2">NA</text>
+</svg>

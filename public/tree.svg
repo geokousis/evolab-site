@@ -1,0 +1,63 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1360 980"
+  fill="none"
+  role="img"
+  aria-label="EvoLab tree"
+>
+  <defs>
+    <style>
+      .branch {
+        stroke: #3b3b3b;
+        stroke-width: 3.4;
+        stroke-linecap: round;
+      }
+      .node {
+        fill: #111111;
+        stroke: #454545;
+        stroke-width: 2;
+      }
+      .label {
+        fill: #767676;
+        font-family: "Sora", "Manrope", sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+      }
+    </style>
+  </defs>
+
+  <g id="branches">
+    <line id="branch-goal" class="branch" x1="430" y1="700" x2="540" y2="260" />
+    <line id="branch-main-1" class="branch" x1="430" y1="700" x2="620" y2="570" />
+    <line id="branch-members" class="branch" x1="620" y1="570" x2="740" y2="430" />
+    <line id="branch-main-2" class="branch" x1="620" y1="570" x2="820" y2="650" />
+    <line id="branch-projects" class="branch" x1="820" y1="650" x2="930" y2="610" />
+    <line id="branch-main-3" class="branch" x1="820" y1="650" x2="1040" y2="760" />
+    <line id="branch-main-4" class="branch" x1="1040" y1="760" x2="1092" y2="742" />
+    <line id="branch-papers" class="branch" x1="1092" y1="742" x2="1164" y2="704" />
+    <line id="branch-main-5" class="branch" x1="1092" y1="742" x2="1208" y2="794" />
+    <line id="branch-teaching" class="branch" x1="1208" y1="794" x2="1262" y2="724" />
+    <line id="branch-contact" class="branch" x1="1208" y1="794" x2="1320" y2="858" />
+  </g>
+
+  <g id="nodes">
+    <circle id="node-goal" class="node" cx="540" cy="260" r="13" />
+    <text id="label-goal" class="label" x="558" y="265">GOAL</text>
+
+    <circle id="node-members" class="node" cx="740" cy="430" r="13" />
+    <text id="label-members" class="label" x="758" y="435">MEMBERS</text>
+
+    <circle id="node-projects" class="node" cx="930" cy="610" r="13" />
+    <text id="label-projects" class="label" x="948" y="615">PROJECTS</text>
+
+    <circle id="node-papers" class="node" cx="1164" cy="704" r="13" />
+    <text id="label-papers" class="label" x="1182" y="709">PAPERS</text>
+
+    <circle id="node-teaching" class="node" cx="1262" cy="724" r="13" />
+    <text id="label-teaching" class="label" x="1280" y="729">TEACHING</text>
+
+    <circle id="node-contact" class="node" cx="1320" cy="858" r="13" />
+    <text id="label-contact" class="label" x="1338" y="863">CONTACT</text>
+  </g>
+</svg>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1360 980"
+   fill="none"
+   role="img"
+   aria-label="EvoLab tree"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="tree.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2571429"
+     inkscape:cx="657.44318"
+     inkscape:cy="658.63636"
+     inkscape:window-width="2382"
+     inkscape:window-height="1360"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <style
+       id="style1">
+      .branch {
+        stroke: #3b3b3b;
+        stroke-width: 3.4;
+        stroke-linecap: round;
+      }
+      .node {
+        fill: #111111;
+        stroke: #454545;
+        stroke-width: 2;
+      }
+      .label {
+        fill: #767676;
+        font-family: &quot;Sora&quot;, &quot;Manrope&quot;, sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+      }
+    </style>
+  </defs>
+  <g
+     id="nodes"
+     transform="translate(1123.1818,-399.31818)">
+    <circle
+       id="node-goal"
+       class="node"
+       cx="-732.80035"
+       cy="641.70111"
+       r="13" />
+    <text
+       id="label-goal"
+       class="label"
+       x="-714.80035"
+       y="646.70111">GOAL</text>
+    <circle
+       id="node-members"
+       class="node"
+       cx="-454.53403"
+       cy="707.25873"
+       r="13" />
+    <text
+       id="label-members"
+       class="label"
+       x="-436.53403"
+       y="712.25873">MEMBERS</text>
+    <circle
+       id="node-projects"
+       class="node"
+       cx="-327.12335"
+       cy="817.55188"
+       r="13" />
+    <text
+       id="label-projects"
+       class="label"
+       x="-309.12335"
+       y="822.55188">PROJECTS</text>
+    <circle
+       id="node-papers"
+       class="node"
+       cx="-259.58078"
+       cy="874.02527"
+       r="13" />
+    <text
+       id="label-papers"
+       class="label"
+       x="-241.58078"
+       y="879.02527">PAPERS</text>
+    <circle
+       id="node-teaching"
+       class="node"
+       cx="-199.04889"
+       cy="923.66077"
+       r="13" />
+    <text
+       id="label-teaching"
+       class="label"
+       x="-181.04889"
+       y="928.66077">TEACHING</text>
+    <circle
+       id="node-contact"
+       class="node"
+       cx="-191.98146"
+       cy="1041.7617"
+       r="13" />
+    <text
+       id="label-contact"
+       class="label"
+       x="-173.98146"
+       y="1046.7617">CONTACT</text>
+  </g>
+  <path
+     style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.43735;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="M 383.04706,254.15909 222.77529,531.75794 565.3498,465.26701 917.58611,638.97259"
+     id="path7" />
+  <path
+     style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.00131;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="M 562.98248,461.56298 660.73269,313.87376"
+     id="path8" />
+  <path
+     style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.23668;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="m 795.48574,578.63165 60.57019,-94.80254"
+     id="path10" />
+  <path
+     style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:2.6233;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="m 867.80867,613.41269 47.68426,-79.10425"
+     id="path10-9" />
+  <path
+     style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:2.88394;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+     d="m 716.33041,539.10554 70.499,-113.63481"
+     id="path11" />
+</svg>

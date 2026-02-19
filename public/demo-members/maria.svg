@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Maria Tsioti">
+  <rect width="320" height="320" fill="#171717"/>
+  <circle cx="160" cy="112" r="54" fill="#d8d8d8"/>
+  <path d="M64 298c12-60 44-100 96-100s84 40 96 100" fill="#a6a6a6"/>
+  <text x="24" y="44" fill="#f2f2f2" font-family="Sora, Manrope, sans-serif" font-size="24" letter-spacing="2">MT</text>
+</svg>

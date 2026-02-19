@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1360 980"
+   fill="none"
+   role="img"
+   aria-label="EvoLab tree"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="tree.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.62857143"
+     inkscape:cx="715.11364"
+     inkscape:cy="416.81818"
+     inkscape:window-width="2518"
+     inkscape:window-height="1360"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="nodes" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <style
+       id="style1">
+      .branch {
+        stroke: #3b3b3b;
+        stroke-width: 3.4;
+        stroke-linecap: round;
+      }
+      .node {
+        fill: #111111;
+        stroke: #454545;
+        stroke-width: 2;
+      }
+      .label {
+        fill: #767676;
+        font-family: &quot;Sora&quot;, &quot;Manrope&quot;, sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+      }
+    </style>
+  </defs>
+  <g
+     id="branches">
+    <path
+       style="fill:#000000;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="M 189.31818,595 C 260.0113,472.55593 330.70442,350.11185 401.39754,227.66778"
+       id="path1"
+       inkscape:path-effect="#path-effect1"
+       inkscape:original-d="M 189.31818,595 C 260.0113,472.55593 330.70442,350.11185 401.39754,227.66778"
+       transform="translate(-2.3629464,-42.844321)" />
+    <path
+       style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 186.74047,552.90929 295.85991,-133.3057 68.6215,-150.74231"
+       id="path2" />
+    <path
+       style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 482.04546,419.60227 228.29545,83.125 113.75,-72.38636"
+       id="path3" />
+    <path
+       style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="M 709.14773,502.72727 906.81818,577.5 l 78.75,-48.52273"
+       id="path4" />
+    <path
+       style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 906.02273,577.10227 87.69886,37.58523 42.35791,-27.24432"
+       id="path5" />
+    <path
+       style="fill:none;fill-opacity:0.510355;fill-rule:evenodd;stroke:#3b3b3b;stroke-width:3.4;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       d="m 993.92046,615.28409 54.48864,28.63636"
+       id="path6" />
+  </g>
+  <g
+     id="nodes"
+     transform="translate(1123.1818,-399.31818)">
+    <circle
+       id="node-goal"
+       class="node"
+       cx="-717.61365"
+       cy="574.20453"
+       r="13" />
+    <text
+       id="label-goal"
+       class="label"
+       x="-699.61365"
+       y="579.20453">GOAL</text>
+    <circle
+       id="node-members"
+       class="node"
+       cx="-565.34088"
+       cy="655.51135"
+       r="13" />
+    <text
+       id="label-members"
+       class="label"
+       x="-547.34088"
+       y="660.51135">MEMBERS</text>
+    <circle
+       id="node-projects"
+       class="node"
+       cx="-288.31284"
+       cy="822.61414"
+       r="13" />
+    <text
+       id="label-projects"
+       class="label"
+       x="-270.31284"
+       y="827.61414">PROJECTS</text>
+    <circle
+       id="node-papers"
+       class="node"
+       cx="-124.58767"
+       cy="920.71039"
+       r="13" />
+    <text
+       id="label-papers"
+       class="label"
+       x="-106.58767"
+       y="925.71039">PAPERS</text>
+    <circle
+       id="node-teaching"
+       class="node"
+       cx="-75.305206"
+       cy="981.03284"
+       r="13" />
+    <text
+       id="label-teaching"
+       class="label"
+       x="-57.305206"
+       y="986.03284">TEACHING</text>
+    <circle
+       id="node-contact"
+       class="node"
+       cx="-61.704544"
+       cy="1042.9431"
+       r="13" />
+    <text
+       id="label-contact"
+       class="label"
+       x="-43.704544"
+       y="1047.9431">CONTACT</text>
+  </g>
+</svg>

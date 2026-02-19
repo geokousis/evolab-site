@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Yannis Petrou">
+  <rect width="320" height="320" fill="#121212"/>
+  <circle cx="160" cy="116" r="53" fill="#c9c9c9"/>
+  <path d="M60 298c14-59 46-98 100-98s86 39 100 98" fill="#969696"/>
+  <text x="24" y="44" fill="#ededed" font-family="Sora, Manrope, sans-serif" font-size="24" letter-spacing="2">YP</text>
+</svg>
