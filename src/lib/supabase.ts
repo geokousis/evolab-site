@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 
 export interface Member {
   id: string;
@@ -6,10 +6,10 @@ export interface Member {
   role: string;
   description: string;
   photo_url?: string | null;
-  image_url?: string | null;
-  avatar_url?: string | null;
+  photo_storage_path?: string | null;
   is_current: boolean;
   cv_link: string | null;
+  cv_storage_path?: string | null;
   display_order: number;
 }
 
@@ -36,28 +36,36 @@ export interface Publication {
 type QueryResult<T> = Promise<{ data: T[]; error: null }>;
 
 type FallbackClient = {
-  from: <T>(_table: string) => {
-    select: (_columns: string) => {
-      order: (_column: string, _options?: { ascending?: boolean }) => QueryResult<T>;
+  from: <T>(table: string) => {
+    select: (columns: string) => {
+      order: (column: string, options?: { ascending?: boolean }) => QueryResult<T>;
     };
   };
 };
 
 const fallbackClient: FallbackClient = {
-  from: <T>(_table: string) => ({
-    select: (_columns: string) => ({
-      order: async (_column: string, _options?: { ascending?: boolean }) => ({
-        data: [] as T[],
-        error: null,
-      }),
+  from: <T>(table: string) => ({
+    select: (columns: string) => ({
+      order: async (column: string, options?: { ascending?: boolean }) => {
+        void table;
+        void columns;
+        void column;
+        void options;
+        return {
+          data: [] as T[],
+          error: null,
+        };
+      },
     }),
   }),
 };
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL as string | undefined;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
 
-export const supabase: FallbackClient =
-  supabaseUrl && supabaseAnonKey
-    ? (createClient(supabaseUrl, supabaseAnonKey) as unknown as FallbackClient)
-    : fallbackClient;
+export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
+export const supabaseClient: SupabaseClient | null = isSupabaseConfigured
+  ? createClient(supabaseUrl as string, supabaseAnonKey as string)
+  : null;
+
+export const supabase: SupabaseClient | FallbackClient = supabaseClient ?? fallbackClient;
