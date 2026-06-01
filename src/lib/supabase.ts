@@ -68,4 +68,4 @@ export const supabaseClient: SupabaseClient | null = isSupabaseConfigured
   ? createClient(supabaseUrl as string, supabaseAnonKey as string)
   : null;
 
-export const supabase: SupabaseClient | FallbackClient = supabaseClient ?? fallbackClient;
+export const supabase = (supabaseClient ?? fallbackClient) as unknown as SupabaseClient;

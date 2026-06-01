@@ -1,4 +1,4 @@
-import { type ChangeEvent, useEffect, useMemo, useRef, useState, type FormEvent } from 'react';
+import { type ChangeEvent, useEffect, useMemo, useState, type FormEvent } from 'react';
 import type { Session } from '@supabase/supabase-js';
 import {
   ChevronDown,
@@ -164,7 +164,7 @@ function AdminPage() {
   const [workingContent, setWorkingContent] = useState<AdminContent | null>(null);
   const [syncedContent, setSyncedContent] = useState<AdminContent | null>(null);
   const [undoStack, setUndoStack] = useState<AdminContent[]>([]);
-  const [activeSection, setActiveSection] = useState(SECTION_NAV[0].id);
+  const [activeSection, setActiveSection] = useState<string>(SECTION_NAV[0].id);
   const [deletedMemberIds, setDeletedMemberIds] = useState<string[]>([]);
   const [deletedProjectIds, setDeletedProjectIds] = useState<string[]>([]);
   const [deletedPublicationIds, setDeletedPublicationIds] = useState<string[]>([]);

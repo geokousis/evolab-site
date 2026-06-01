@@ -453,7 +453,6 @@ function App() {
 
   const currentMembers = members.filter((member) => member.is_current);
   const pastMembers = members.filter((member) => !member.is_current);
-  const visibleMembers = (currentMembers.length > 0 ? currentMembers : demoMembers).slice(0, 6);
   const activeProjects = projects.filter((project) => project.status === 'active');
   const pastProjects = projects.filter((project) => project.status === 'past');
   const pastProjectsWithFallback = useMemo(() => {
@@ -492,7 +491,7 @@ function App() {
       .join('');
 
   const memberPhoto = (member: DisplayMember) => {
-    return member.photo_url || member.image_url || member.avatar_url || null;
+    return member.photo_url || null;
   };
 
   const renderTreeTip = (node: (typeof treeNodes)[number], isActive: boolean) => (
