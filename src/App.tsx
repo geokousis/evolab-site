@@ -354,10 +354,10 @@ function App() {
 
   const fetchData = async () => {
     const [membersRes, projectsRes, publicationsRes, siteContentRes, scholarRes] = await Promise.all([
-      supabase.from<Member>('members').select('*').order('display_order'),
-      supabase.from<Project>('projects').select('*').order('display_order'),
-      supabase.from<Publication>('publications').select('*').order('year', { ascending: false }),
-      supabase.from<SiteContent>('site_content').select('*').order('id'),
+      supabase.from('members').select('*').order('display_order'),
+      supabase.from('projects').select('*').order('display_order'),
+      supabase.from('publications').select('*').order('year', { ascending: false }),
+      supabase.from('site_content').select('*').order('id'),
       fetch('/data/scholar-cache.json', { cache: 'no-store' }).catch(() => null),
     ]);
 
